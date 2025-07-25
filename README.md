@@ -41,7 +41,7 @@ def search():
 
 def clear(): [e.delete(0, tk.END) for e in (name, phone, email, addr)]
 
-root = tk.Tk(); root.title("Contact Book"); root.geometry("420x530")
+root = tk.Tk(); root.title("📒 Contact Book"); root.geometry("420x530")
 labels = ["Name", "Phone", "Email", "Address"]
 for i, l in enumerate(labels): tk.Label(root, text=l).grid(row=i, column=0, sticky="w")
 name = tk.Entry(root, width=30); name.grid(row=0, column=1)
